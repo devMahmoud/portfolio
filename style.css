@@ -1,0 +1,32 @@
+.header {
+    background: #3C3A39;
+    display: flex;
+}
+
+.header a {
+    align-self: flex-end;
+}
+
+.headline {
+    background: #3C3A39;
+}
+
+.illustration-header {
+    background: #3C3A39;
+    background-image: url(illustration-header-mobile.png);
+    height: 311.71px;
+    width: 406.36px;
+}
+
+.wraper {
+    display: flex;
+    flex-direction: column;
+}
+
+.wraper > * {
+    flex: 1 1 auto;
+}
+
+.container {
+    display: flex;
+}
