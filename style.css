@@ -1,11 +1,16 @@
 .header {
   background: #3c3a39;
   display: flex;
+  border: 2px solid red;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header a {
-  align-self: flex-end;
+  margin-right: 1rem;
 }
+
+
 
 .headline {
   background: #3c3a39;
@@ -21,6 +26,7 @@
 .wraper {
   display: flex;
   flex-direction: column;
+  align-items: stretch;
 }
 
 .wraper > * {
