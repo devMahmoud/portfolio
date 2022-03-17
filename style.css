@@ -14,6 +14,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
+  color: #fff;
+  text-decoration: none;
 }
 
 .headline {
@@ -65,4 +67,12 @@
 .container {
   display: flex;
   align-items: stretch;
+}
+
+.icon-bar ul {
+  list-style: none;
+}
+
+ul li{
+  display: inline-block;
 }
