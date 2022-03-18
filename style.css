@@ -23,7 +23,7 @@
 }
 
 .headline h1 {
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 64px;
@@ -34,7 +34,7 @@
 .job-title {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  font-weight: 700 bold;
+  font-weight:bold;
   line-height: 32px;
   font-size: 24px;
   color: #fff5e1;
