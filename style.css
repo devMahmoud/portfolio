@@ -1,0 +1,101 @@
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.header {
+  background: #3c3a39;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.header:last-child {
+  margin-right: 1rem;
+}
+
+.logo {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo:active {
+  box-shadow: 0 2px rgb(255, 254, 254);
+  transform: translateY(4px);
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 120px 24px;
+  background: #3c3a39;
+  background-image: url(illustration-header-mobile.png);
+  background-position: 100% 100%;
+  background-size: 25%;
+  background-repeat: no-repeat;
+}
+
+.name {
+  position: static;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px 0;
+}
+
+.job-title {
+  color: #fff5e1;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  flex: none;
+  flex-grow: 0;
+}
+
+.headline p {
+  flex: none;
+  flex-grow: 0;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 12px 0;
+}
+
+.icon-bar {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+}
+
+.icon-bar li {
+  display: inline-block;
+  margin: 10px;
+  height: 30px;
+  cursor: pointer;
+}
