@@ -131,7 +131,7 @@ html {
 .card-title {
   width: 295px;
   height: 81px;
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -146,7 +146,7 @@ html {
 .card-desc {
   width: 295px;
   height: 87px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -172,9 +172,9 @@ html {
   list-style: none;
 }
 
-.card-btn button{
+.card-btn button {
   height: 40px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -207,7 +207,7 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background: #FF6B00;
+  background: #ff6b00;
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -218,16 +218,16 @@ html {
 .proj-view button {
   width: 124px;
   height: 48px;
-  background: #FF6B00;
+  background: #ff6b00;
   text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
   border: none;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
-  line-height: 24px
+  line-height: 24px;
 }
 
 .recent-work {
@@ -267,7 +267,7 @@ html {
 }
 
 .works-title {
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -294,7 +294,7 @@ html {
 .multi-post {
   width: 327px;
   height: 36px;
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -308,7 +308,7 @@ html {
 .multi-post-content {
   width: 327px;
   height: 147px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -364,7 +364,7 @@ html {
   background: #fff;
   padding: 10px 12px;
   box-sizing: border-box;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -380,7 +380,7 @@ html {
   background: #ff6b00;
   width: 124px;
   height: 48px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
