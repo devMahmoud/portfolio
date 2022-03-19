@@ -185,18 +185,21 @@ html {
 }
 
 .card-btn-html {
+  width: 56px;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
 .card-btn-strap {
+  width: 95px;
   flex: none;
   order: 1;
   flex-grow: 0;
 }
 
 .card-btn-ruby {
+  width: 61px;
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -386,4 +389,157 @@ html {
   font-size: 17px;
   line-height: 24px;
   color: #fff;
+}
+
+.about-myself {
+  background:#1c1a19;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 120px 24px;
+  width: 375px;
+  height: 563px;
+  background-image: url(about-background.png);
+  background-position: 100% 90%;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+.about-title {
+  width: 327px;
+  height: 79px;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 24px 0;
+}
+
+.about-content {
+  width: 327px;
+  height: 148px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 24px 0;
+}
+
+.get-resume {
+  border: none;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 24px 0;
+  background: #ff6b00;
+  color: #fff;
+  text-align: center;
+}
+
+.devider {
+  border: 1px solid #fff;
+  margin: 8px 24px;
+  width: 327px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 24px;
+  width: 329px;
+  height: 1241.46px;
+}
+
+.lang-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  width: 225.46px;
+  height: 281.46px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 24px 0;
+  list-style: none;
+}
+
+.list-item1 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+.language {
+  list-style: square outside url("trans-rect.png");
+}
+
+.lang-item {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  color: #fff;
+}
+
+.framwork-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  width: 281px;
+  height: 336px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 24px 0;
+  list-style: none;
+}
+
+.framworks {
+  list-style: square outside url("rectangle.png");
+}
+
+.skills-item {
+  list-style: square outside url("circle.png");
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  width: 169px;
+  height: 336px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 24px 0;
 }
