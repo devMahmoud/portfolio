@@ -21,6 +21,7 @@ HTML, CSS
 ## 🤝 Contributing
 
 - Daniel Malo Osorio: @Danie12345
+- Shingirai Bhengesa: @ShingiraiBhengesa
 
 ## Show your support
 
