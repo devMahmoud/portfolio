@@ -159,12 +159,10 @@ html {
 }
 
 .card-tech-btns {
-  display: flex;
-  flex-direction: row;
+  
   padding: 0;
   width: 236px;
   height: 40px;
-  justify-content: space-between;
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -182,6 +180,10 @@ html {
   background: rgba(255, 255, 255, 0.24);
   color: #fff;
   border: none;
+}
+
+.card-btn {
+  float: left;
 }
 
 .card-btn-html {
