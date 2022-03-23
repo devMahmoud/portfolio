@@ -564,7 +564,7 @@ body {
   padding: 0 24px;
   width: 375px;
   height: 844px;
-  margin-top: 58px;
+  margin: 58px 0;
 }
 
 .form-heading {
@@ -595,18 +595,6 @@ body {
   flex-grow: 0;
 }
 
-.form-inputs {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  width: 327px;
-  padding: 0;
-}
-
 .submit-button {
   padding: 12px;
   width: 131px;
@@ -625,26 +613,30 @@ body {
 }
 
 .submit-button:hover {
-  background: #ff5100;
+  background: #fbf8f7;;
   padding: 14px;
   width: 135px;
 }
 
-.name-item {
+.submit-button:active {
+  background: #ff6a00c5;
+}
+
+.name-input {
   flex: none;
   order: 0;
   flex-grow: 0;
   margin: 24px 0;
 }
 
-.email-item {
+.email-input {
   flex: none;
   order: 1;
   flex-grow: 0;
   margin: 24px 0;
 }
 
-.comment-item {
+.input-area {
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -659,8 +651,9 @@ body {
   line-height: 24px;
   color: #979493;
   height: 18px;
-  width: 295px;
+  width: 327px;
   border: none;
+  margin-bottom: 14px;
 }
 
 .input-area {
@@ -670,9 +663,10 @@ body {
   font-size: 15px;
   line-height: 24px;
   color: #3c3a39;
-  width: 303px;
+  width: 327px;
   height: 90px;
   background: #fbf8f7;
+  border: none;
 }
 
 .input-devider {
@@ -688,8 +682,9 @@ body {
 }
 
 footer {
-  width: 375px;
-  height: 72px;
+  margin: 0px;
+  padding: 0px;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -736,4 +731,11 @@ footer {
   flex: none;
   order: 4;
   flex-grow: 0;
+}
+
+.home-indicator {
+  width: 134px;
+  height: 5px;
+  background: #0d151e;
+  border-radius: 10px;
 }
