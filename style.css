@@ -609,13 +609,14 @@ body {
 }
 
 .submit-button:hover {
-  background: #fbf8f7;
-  padding: 14px;
-  width: 135px;
+  border: 1px solid #f55800;
+  background: #fff5e1;
+  color: #F55800;
 }
 
 .submit-button:active {
-  background: #ff6a00c5;
+  background: #e05304;
+  color: #f4f1f0;
 }
 
 .name-input {
