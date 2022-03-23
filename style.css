@@ -159,7 +159,6 @@ html {
 }
 
 .card-tech-btns {
-  
   padding: 0;
   width: 236px;
   height: 40px;
@@ -460,7 +459,7 @@ html {
 }
 
 .get-resume:hover {
-  background: #ff8800;
+  background: #f80;
   padding: 14px;
 }
 

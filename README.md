@@ -16,7 +16,7 @@ HTML, CSS
 
 👤 **Mahmoud Makhlouf**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
+- GitHub: [@devMahmoud](https://github.com/devMahmoud)
 
 ## 🤝 Contributing
 
