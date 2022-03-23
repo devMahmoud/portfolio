@@ -242,50 +242,53 @@
         </div>
     </section>
     <section class="form-container">
-        <h3>
+        <h3 class="form-heading">
             I'm always interested in hearing about new projects, 
             so if you'd like to chat please get in touch.
         </h3>
-        <form action="#" method="post"  class="form">
-            <ul>
-                <li>
-                    <input class="name-input" type="text" placeholder="John Doe" name="full-name" maxlength="30" required>
+        <form action="https://formspree.io/f/xayvbrnw" method="post" class="form">
+            <ul class="form-inputs">
+                <li class="name-item">
+                    <input class="input" type="text" placeholder="Full name" name="full-name" maxlength="30" required>
+                    <div class="input-devider"></div>
                 </li>
-                <li>
-                    <input class="email-input" type="email" placeholder="johndoe@gmail.com" name="email" required>
+                <li class="email-item">
+                    <input class="input" type="email" placeholder="Email address" name="email" required>
+                    <div class="input-devider"></div>
                 </li>
-                <li>
-                    <textarea class="comments-input" placeholder="Leave me any comments here!" name="comments" maxlength="500" required></textarea>
+                <li class="comment-item">
+                    <textarea class="input-area" placeholder="Enter text here" name="comments" maxlength="500" required></textarea>
                 </li>
             </ul>
             <input class="submit-button" type="submit" value="Get in Touch">     
         </form>
     </section>
+    <div class="form-footer-devider"></div>
     <footer>
-        <ul>
-            <li>
+        <ul class="nav-icons">
+            <li class="nav-git">
                 <a href="">
-                    <img src="github.png" alt="">
+                    <img src="nav-img/github.png" alt="">
                 </a>
             </li>
-            <li>
+            <li class="nav-in">
                 <a href="">
-                    <img src="in.png" alt="">
+                    <img src="nav-img/in.png" alt="">
                 </a>
             </li>
-            <li>
+            <li class="nav-vector">
                 <a href="">
-                    <img src="Vector.png" alt="">
+                    <img src="nav-img/Vector.png" alt="">
                 </a>
             </li>
-            <li>
+            <li class="nav-twitter">
                 <a href="">
-                    <img src="twitter.png" alt="">
+                    <img src="nav-img/twitter.png" alt="">
                 </a>
             </li>
-            <li>
+            <li class="nav-m">
                 <a href="">
-                    <img src="m.png" alt="">
+                    <img src="nav-img/m.png" alt="">
                 </a>
             </li>
         </ul>
