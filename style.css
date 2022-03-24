@@ -248,8 +248,8 @@ body {
   line-height: 24px;
   width: 100%;
   transition-property: background;
-  transition-duration: .1s;
-  transition-delay: .05s;
+  transition-duration: 0.1s;
+  transition-delay: 0.05s;
 }
 
 .proj-view button:hover {
