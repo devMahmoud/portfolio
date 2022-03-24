@@ -465,6 +465,12 @@ body {
   padding: 14px;
 }
 
+.get-resume:active {
+  background: #e05304;
+  color: #f4f1f0;
+    
+}
+
 .devider {
   border: 1px solid #fff;
   margin: 8px 24px;
