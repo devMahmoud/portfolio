@@ -12,11 +12,11 @@ body {
   background: #3c3a39;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 1rem;
   align-items: center;
 }
 
-.header:last-child {
+.toggle-button {
   margin-right: 1rem;
 }
 
@@ -35,6 +35,28 @@ body {
   transform: translateY(4px);
 }
 
+.navbar-links {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+}
+
 .headline {
   display: flex;
   flex-direction: column;
@@ -45,6 +67,13 @@ body {
   background-position: 100% 100%;
   background-size: 25%;
   background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .name {
@@ -57,7 +86,6 @@ body {
   letter-spacing: 0.37px;
   color: #ff6b00;
   flex: none;
-  order: 0;
   flex-grow: 0;
   margin: 12px 0;
 }
@@ -92,13 +120,11 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 200px;
 }
 
 .icon-bar li {
   display: inline-block;
   margin: 10px;
-  height: 30px;
   cursor: pointer;
 }
 
@@ -162,7 +188,7 @@ body {
 
 .card-tech-btns {
   padding: 0;
-  width: 236px;
+  /*width: 236px;*/
   height: 40px;
   flex: none;
   order: 2;
@@ -173,6 +199,7 @@ body {
 
 .card-btn button {
   height: 40px;
+  padding: 5px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -283,6 +310,10 @@ body {
 }
 
 .first-project {
+  background-image: url(img/top-proj.png);
+  width: 327px;
+  height: 237px;
+  margin: 1rem 0;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -302,7 +333,7 @@ body {
   line-height: 52px;
   color: #1c1a19;
   margin: 24px 0;
-  width: 327px;
+  /*width: 327px;*/
   height: 83px;
   flex: none;
   order: 0;
@@ -320,7 +351,7 @@ body {
 }
 
 .multi-post {
-  width: 327px;
+  /*width: 327px;*/
   height: 36px;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -401,6 +432,7 @@ body {
   font-size: 17px;
   line-height: 24px;
   color: #fff;
+  margin-top: 1rem;
 }
 
 .about-myself {
@@ -412,8 +444,8 @@ body {
   flex-direction: column;
   align-items: flex-start;
   padding: 120px 24px;
-  width: 375px;
-  height: 563px;
+  width: 100%;
+  height: 100vh;
   background-image: url(img/about-background.png);
   background-position: 100% 90%;
   background-size: 50%;
@@ -421,7 +453,7 @@ body {
 }
 
 .about-title {
-  width: 327px;
+  width: 100%;
   height: 79px;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -437,7 +469,7 @@ body {
 }
 
 .about-content {
-  width: 327px;
+  width: 100%;
   height: 148px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -490,7 +522,6 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 120px 24px;
-  width: 329px;
   height: 1241.46px;
 }
 
@@ -746,4 +777,80 @@ footer {
   height: 5px;
   background: #0d151e;
   border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .toggle-button {
+    display: none;
+  }
+  .navbar-links {
+    display: flex;
+  }
+  .header {
+    padding: 0 5rem;
+  }
+  .headline {
+    background-image: url(img/desktop/Illustration-header.svg);
+    background-size: 50%;
+    flex-direction: row;
+  }
+  .icon-bar {
+    order: 0;
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+  .intro {
+    max-width: 50%;
+    order: 1;
+    margin-left: 1rem;
+  }
+  .grid-container {
+    grid-template-columns: auto auto auto;
+  }
+  .recent-work {
+    width: 100%;
+    padding: 0 1rem;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .title-container {
+    flex-direction: row;
+    width: 100%;
+  }
+  .line {
+    width: 100%;
+  }
+  .first-card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .first-project {
+    background-image: url(img/desktop/img-placeholder.png);
+    width: 648px;
+    height: 448px;
+  }
+  .first-card-content {
+    width: auto;
+  }
+  .about-myself {
+    height: 100%;
+  }
+  .about{
+    background-image: url(img/desktop/about-bg-desktop.png);
+  }
+  .skills {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+    height: auto;
+    width: 100%;
+  }
+  .form-container {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
