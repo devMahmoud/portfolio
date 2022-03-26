@@ -19,21 +19,29 @@
         <a class="logo" href="#">
             Mahmoud Makhlouf
         </a>
-
-        <a href="#">
+        <ul class="navbar-links">
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#"><img src="img/icon-mail.png" alt="mail"></a></li>
+        </ul>
+        <a class="toggle-button" href="#">
             <img src="img/Union.png" alt="collapsed-menu">
         </a>
 
     </header>
 
     <div class="headline">
-        <h1 class="name">Hey There. I’m Mahmoud</h1>
-        <h2 class="job-title">I’am a Software Developer</h2>
-        <p>I can help you build a product ,
-            feature or website Look through some of my work and experience!
-            If you like what you see and have a project you need coded,
-            don’t hestiate to contact me.
-        </p>
+        <div class="intro">
+            <h1 class="name">Hey There.<br>I’m Mahmoud</h1>
+            <h2 class="job-title">I’am a Software Developer</h2>
+            <p>I can help you build a product ,
+                feature or website Look through some of my work and experience!
+                If you like what you see and have a project you need coded,
+                don’t hestiate to contact me.
+            </p>
+        </div>
+        
 
         <ul class="icon-bar">
             <li>
@@ -75,7 +83,7 @@
             </div>
             
             <div class="first-card">
-                <img class="first-project" src="img/top-proj.png" alt="project-screenshot">
+                <div class="first-project"></div>
 
                 <div class="first-card-content">
                     <h2 class="multi-post">Multi-Post Stories</h2>
@@ -211,8 +219,8 @@
             <button class="get-resume">Get My Resume</button>
         </div>
 
-        <div class="devider"></div>
-
+        <hr class="devider">
+        
         <div class="skills">
             <ul class="lang-list">
                 <li><ul class="language list-item1"><li>Language</li></ul></li>
@@ -247,16 +255,16 @@
                 I'm always interested in hearing about new projects, 
                 so if you'd like to chat please get in touch.
             </h3>
-            <form action="https://formspree.io/f/xayvbrnw" method="post" class="form">
-                <div class="name-input">
+            <form class="form" action="https://formspree.io/f/xayvbrnw" method="post">
+                <div class="name-input desktop-input">
                     <input class="input" type="text" placeholder="Full name" name="full-name" maxlength="30" required>
                     <div class="input-devider"></div>
                 </div>
-                <div class="email-input">
+                <div class="email-input desktop-input">
                     <input class="input" type="email" placeholder="Email address" name="email" required>
                     <div class="input-devider"></div>
                 </div>
-                <textarea class="input-area" placeholder="Enter text here" name="comments" maxlength="500" required></textarea>
+                <textarea class="input-area desktop-input" placeholder="Enter text here" name="comments" maxlength="500" required></textarea>
                 <input class="submit-button" type="submit" value="Get in Touch">
             </form>
         </div>
