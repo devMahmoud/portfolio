@@ -777,7 +777,6 @@ footer {
 }
 
 @media (min-width: 768px) {
-
   .toggle-button {
     display: none;
   }
@@ -849,7 +848,7 @@ footer {
     height: 100%;
   }
 
-  .about{
+  .about {
     background-image: url(img/desktop/about-bg-desktop.png);
   }
 
