@@ -50,7 +50,7 @@ body {
   text-decoration: none;
   color: #fff;
   padding: 1rem;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
@@ -188,7 +188,6 @@ body {
 
 .card-tech-btns {
   padding: 0;
-  /*width: 236px;*/
   height: 40px;
   flex: none;
   order: 2;
@@ -333,7 +332,6 @@ body {
   line-height: 52px;
   color: #1c1a19;
   margin: 24px 0;
-  /*width: 327px;*/
   height: 83px;
   flex: none;
   order: 0;
@@ -351,7 +349,6 @@ body {
 }
 
 .multi-post {
-  /*width: 327px;*/
   height: 36px;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -780,66 +777,82 @@ footer {
 }
 
 @media (min-width: 768px) {
+
   .toggle-button {
     display: none;
   }
+
   .navbar-links {
     display: flex;
   }
+
   .header {
     padding: 0 5rem;
   }
+
   .headline {
     background-image: url(img/desktop/Illustration-header.svg);
     background-size: 50%;
     flex-direction: row;
   }
+
   .icon-bar {
     order: 0;
     flex-direction: column;
     padding-top: 2rem;
   }
+
   .intro {
     max-width: 50%;
     order: 1;
     margin-left: 1rem;
   }
+
   .grid-container {
     grid-template-columns: auto auto auto;
   }
+
   .recent-work {
     width: 100%;
     padding: 0 1rem;
     grid-column-start: 1;
     grid-column-end: 4;
   }
+
   .title-container {
     flex-direction: row;
     width: 100%;
   }
+
   .line {
     width: 100%;
   }
+
   .first-card {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
+
   .first-project {
     background-image: url(img/desktop/img-placeholder.png);
     width: 648px;
     height: 448px;
   }
+
   .first-card-content {
     width: auto;
   }
+
   .about-myself {
     height: 100%;
   }
+
   .about{
     background-image: url(img/desktop/about-bg-desktop.png);
   }
+
   .skills {
     flex-direction: row;
     justify-content: space-around;
@@ -847,6 +860,7 @@ footer {
     height: auto;
     width: 100%;
   }
+
   .form-container {
     width: 100%;
     height: auto;
