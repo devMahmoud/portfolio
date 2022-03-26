@@ -432,6 +432,12 @@ body {
   margin-top: 1rem;
 }
 
+.see-first-project:hover {
+  border: 1px solid #f55800;
+  background: #fff5e1;
+  color: #f55800;
+}
+
 .about-myself {
   background: #1c1a19;
 }
@@ -466,7 +472,7 @@ body {
 }
 
 .about-content {
-  width: 100%;
+  max-width: 327px;
   height: 148px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -509,9 +515,9 @@ body {
 }
 
 .devider {
-  border: 1px solid #fff;
-  margin: 8px 24px;
-  width: 327px;
+  color: #fff;
+  height: 1px;
+  margin: 2rem;
 }
 
 .skills {
@@ -526,10 +532,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   padding: 0;
   width: 225.46px;
-  height: 281.46px;
+  height: 336px;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -547,7 +552,7 @@ body {
 }
 
 .language {
-  list-style: square outside url("img/trans-rect.png");
+  list-style: square inside url("img/trans-rect.png");
 }
 
 .lang-item {
@@ -574,11 +579,11 @@ body {
 }
 
 .framworks {
-  list-style: square outside url("img/rectangle.png");
+  list-style: square inside url("img/rectangle.png");
 }
 
 .skills-item {
-  list-style: square outside url("img/circle.png");
+  list-style: square inside url("img/circle.png");
 }
 
 .skills-list {
@@ -606,6 +611,8 @@ body {
 }
 
 .form-heading {
+  display: flex;
+  justify-content: center;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -617,8 +624,6 @@ body {
   order: 0;
   flex-grow: 0;
   margin: 24px 0;
-  width: 327px;
-  height: 216px;
 }
 
 .form {
@@ -789,6 +794,10 @@ footer {
     padding: 0 5rem;
   }
 
+  .logo {
+    margin-left: 2rem;
+  }
+
   .headline {
     background-image: url(img/desktop/Illustration-header.svg);
     background-size: 50%;
@@ -804,11 +813,17 @@ footer {
   .intro {
     max-width: 50%;
     order: 1;
-    margin-left: 1rem;
+    margin-left: 3rem;
+  }
+
+  .intro p {
+    max-width: 566px;
   }
 
   .grid-container {
     grid-template-columns: auto auto auto;
+    justify-items: center;
+    margin: 0 6rem;
   }
 
   .recent-work {
@@ -820,28 +835,62 @@ footer {
 
   .title-container {
     flex-direction: row;
+    justify-content: center;
     width: 100%;
   }
 
   .line {
     width: 100%;
+    max-width: 794px;
+    margin-left: 1rem;
   }
 
   .first-card {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .first-project {
     background-image: url(img/desktop/img-placeholder.png);
     width: 648px;
     height: 448px;
+    margin: 0;
   }
 
   .first-card-content {
+    max-width: 448px;
+    margin-left: 1rem;
+  }
+
+  .multi-post-content {
     width: auto;
+    padding: 1rem 0;
+  }
+
+  .card {
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(img/desktop/card-background.png);
+  }
+
+  .proj-view {
+    display: none;
+  }
+
+  .card:hover {
+    background: url(img/desktop/card-background.png);
+    position: relative;
+    cursor: pointer;
+  }
+
+  .card:hover > .card-block {
+    display: none;
+  }
+
+  .card:hover > .proj-view {
+    display: block;
+    position:absolute;
+    bottom:0;
   }
 
   .about-myself {
@@ -850,6 +899,17 @@ footer {
 
   .about {
     background-image: url(img/desktop/about-bg-desktop.png);
+    background-position: 100% 50%;
+    background-size: 50%;
+    padding-left: 7rem;
+  }
+
+  .about-content {
+    max-width: 566px;
+  }
+
+  .devider {
+    margin-left: 7rem;
   }
 
   .skills {
@@ -860,10 +920,41 @@ footer {
     width: 100%;
   }
 
+  .skills ul {
+    align-items: flex-start;
+  }
+
   .form-container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
     width: 100%;
     height: auto;
-    flex-direction: row;
-    justify-content: space-between;
+    margin: 7rem 0;
+  }
+
+  .form {
+    width: 50%;
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  .form-heading {
+    text-align: left;
+    max-width: 455px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #262626;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .desktop-input {
+    width: 100%;
+  }
+
+  .input-devider {
+    width: 100%;
   }
 }
