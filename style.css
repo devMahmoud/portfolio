@@ -889,8 +889,8 @@ footer {
 
   .card:hover > .proj-view {
     display: block;
-    position:absolute;
-    bottom:0;
+    position: absolute;
+    bottom: 0;
   }
 
   .about-myself {
