@@ -16,23 +16,50 @@ body {
   align-items: center;
 }
 
+.header-mobile-menu-opened {
+  flex-direction: column-reverse;
+  align-items: inherit;
+}
+
 .toggle-button {
   margin-right: 1rem;
+  width: 18px;
+  height: 12px;
+  background-image: url(img/Union.png);
+  order: 2;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.toggle-button-opened {
+  margin-right: 1rem;
+  width: 18px;
+  height: 14px;
+  background-image: url(img/closeicon.png);
+  order: 2;
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-self: flex-end;
 }
 
 .logo {
   color: #fff;
   font-size: 18px;
   font-weight: 700;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   text-decoration: none;
   cursor: pointer;
+  order: 0;
 }
 
 .logo:active {
   box-shadow: 0 2px rgb(255, 254, 254);
   transform: translateY(4px);
+}
+
+.mobile-menu {
+  order: 1;
 }
 
 .navbar-links {
@@ -41,20 +68,38 @@ body {
   padding: 0;
 }
 
+.active-navbar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.active {
+  display: flex;
+}
+
+.inactive {
+  display: none;
+}
+
 .navbar-links li {
   list-style: none;
+  width: 100%;
+  border-bottom: 1px solid #6f6c6b;
+  padding-left: 2rem;
+  margin-top: 2rem;
 }
 
 .navbar-links li a {
   display: block;
   text-decoration: none;
-  color: #fff;
-  padding: 1rem;
-  font-family: 'Inter', sans-serif;
+  color: #fff5e1;
+  font-family: "Inter", sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 .headline {
@@ -78,7 +123,7 @@ body {
 
 .name {
   position: static;
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -92,7 +137,7 @@ body {
 
 .job-title {
   color: #fff5e1;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -107,7 +152,7 @@ body {
   flex: none;
   flex-grow: 0;
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -159,7 +204,7 @@ body {
 .card-title {
   width: 295px;
   height: 81px;
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -174,7 +219,7 @@ body {
 .card-desc {
   width: 295px;
   height: 87px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -199,7 +244,7 @@ body {
 .card-btn button {
   height: 40px;
   padding: 5px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -253,7 +298,7 @@ body {
   background: #fff;
   padding: 10px 12px;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -267,7 +312,7 @@ body {
   letter-spacing: 0.03em;
   color: #fff;
   border: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -325,7 +370,7 @@ body {
 }
 
 .works-title {
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -350,7 +395,7 @@ body {
 
 .multi-post {
   height: 36px;
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -364,7 +409,7 @@ body {
 .multi-post-content {
   width: 327px;
   height: 147px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -423,7 +468,7 @@ body {
   background: #ff6b00;
   width: 124px;
   height: 48px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -458,7 +503,7 @@ body {
 .about-title {
   width: 100%;
   height: 79px;
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
@@ -474,7 +519,7 @@ body {
 .about-content {
   max-width: 327px;
   height: 148px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -489,7 +534,7 @@ body {
 .get-resume {
   border: none;
   padding: 12px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -543,7 +588,7 @@ body {
 }
 
 .list-item1 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -556,7 +601,7 @@ body {
 }
 
 .lang-item {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -613,7 +658,7 @@ body {
 .form-heading {
   display: flex;
   justify-content: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -647,7 +692,7 @@ body {
   order: 3;
   flex-grow: 0;
   border: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -681,7 +726,7 @@ body {
 }
 
 .input {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -698,7 +743,7 @@ body {
   order: 2;
   flex-grow: 0;
   margin: 24px 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -788,6 +833,27 @@ footer {
 
   .navbar-links {
     display: flex;
+  }
+
+  .navbar-links li {
+    width: auto;
+    list-style: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    border: none;
   }
 
   .header {
