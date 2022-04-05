@@ -16,8 +16,30 @@ body {
   align-items: center;
 }
 
+.header-mobile-menu-opened {
+  flex-direction: column-reverse;
+  align-items: inherit;
+}
+
 .toggle-button {
   margin-right: 1rem;
+  width: 18px;
+  height: 12px;
+  background-image: url(img/Union.png);
+  order: 2;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.toggle-button-opened {
+  margin-right: 1rem;
+  width: 18px;
+  height: 14px;
+  background-image: url(img/closeicon.png);
+  order: 2;
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-self: flex-end;
 }
 
 .logo {
@@ -28,11 +50,16 @@ body {
   font-style: normal;
   text-decoration: none;
   cursor: pointer;
+  order: 0;
 }
 
 .logo:active {
   box-shadow: 0 2px rgb(255, 254, 254);
   transform: translateY(4px);
+}
+
+.mobile-menu {
+  order: 1;
 }
 
 .navbar-links {
@@ -56,24 +83,24 @@ body {
   display: none;
 }
 
-.closeicon {
-  display: none;
-}
 
 .navbar-links li {
   list-style: none;
+  width: 100%;
+  border-bottom: 1px solid #6f6c6b;
+  padding-left: 2rem;
+  margin-top: 2rem;
 }
 
 .navbar-links li a {
   display: block;
   text-decoration: none;
-  color: #fff;
-  padding: 1rem;
+  color: #fff5e1;
   font-family: "Inter", sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 .headline {
@@ -807,6 +834,27 @@ footer {
 
   .navbar-links {
     display: flex;
+  }
+
+  .navbar-links li {
+    width: auto;
+    list-style: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    border: none;
   }
 
   .header {

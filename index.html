@@ -14,25 +14,23 @@
 
 <body>
 
-    <header class="header">
+    <header class="header" id="header">
 
         <a class="logo" href="#">
             Mahmoud Makhlouf
         </a>
         
-        <ul class="navbar-links">
-            <div>
-                <a class="closeicon" href="#"><img src="./img/closeicon.png" alt="closeicon"></a>
-            </div>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li class="mail-icon"><a href="#"><img src="img/icon-mail.png" alt="mail"></a></li>
-        </ul>
-
-        <a class="toggle-button" href="#">
-            <img src="img/Union.png" alt="collapsed-menu">
-        </a>
+        <div class="toggle-button">
+        </div>
+       
+        <div class="mobile-menu">
+            <ul class="navbar-links"> 
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="mail-icon"><a href="#"><img src="img/icon-mail.png" alt="mail"></a></li>
+            </ul>
+        </div>
 
     </header>
 
@@ -46,7 +44,6 @@
                 don’t hestiate to contact me.
             </p>
         </div>
-        
 
         <ul class="icon-bar">
             <li>
@@ -79,7 +76,7 @@
 
     </div>
 
-    <section class="works grid-container">
+    <section class="works grid-container" id="portfolio">
 
         <div class="recent-work">
             <div class="title-container">
@@ -107,7 +104,6 @@
             </div>
             
         </div>
-
         
         <div class="card">
             <div class="card-block">
@@ -212,11 +208,9 @@
             </div>
         </div>
             
-          
-        
     </section>
 
-    <section class="about-myself">
+    <section class="about-myself" id="about">
         <div class="about">
             <h2 class="about-title">About me</h2>
             <p class="about-content">Hello I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.
@@ -255,7 +249,7 @@
         </div>
     </section>
     <footer>
-        <div class="form-container">
+        <div class="form-container" id="contact">
             <h3 class="form-heading">
                 I'm always interested in hearing about new projects, 
                 so if you'd like to chat please get in touch.
