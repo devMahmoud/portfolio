@@ -4,6 +4,10 @@ const logo = document.getElementsByClassName('logo')[0];
 const mailIicon = document.getElementsByClassName('mail-icon')[0];
 const header = document.getElementById('header');
 const cardContainer = document.getElementById('portfolio');
+const form = document.querySelector('.form');
+const emailInput = document.querySelector('.email-input .input');
+const submitBtn = document.querySelector('.submit-button');
+
 
 const menuToggle = () => {
   header.classList.toggle('header-mobile-menu-opened');
@@ -20,8 +24,6 @@ navLinks.addEventListener('click', menuToggle);
 const createCard = (name, desc, techs, img) => {
   let card = document.createElement('div');
   card.className = 'card';
-  console.log(name);
-  console.log(techs);
   let projectName = name;
   let description = desc;
   let featuredImage = img;
@@ -47,7 +49,7 @@ const createCard = (name, desc, techs, img) => {
   
   cardContainer.appendChild(card);
 };
-console.log('hi')
+
 let data = [
   {
     name: 'Nerd Game',
@@ -68,9 +70,25 @@ let data = [
 ];
 
 for(let i = 0; i < data.length; i++){
-  console.log(data[i])
+  
   createCard(data[i].name, data[i].description, data[i].technologies, data[i].featuredImage);
 }
 
-
-
+form.addEventListener('submit', (e) => {
+  let errorMessage = "";
+  for(let i = 0; i < emailInput.value.length; i++){
+    if(emailInput.value.charCodeAt(i) > 64 && emailInput.value.charCodeAt(i) < 91){
+      errorMessage = '* Email Should be in lowercase'
+      break;
+    }
+  }
+  if(errorMessage.length > 0){
+    e.preventDefault();
+    let message = document.createElement('h5');
+    message.textContent = errorMessage;
+    message.style.color = 'red';
+    message.style.order = '4';
+    message.style.marginTop = '1rem';
+    form.appendChild(message);
+  }
+})
