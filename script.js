@@ -4,6 +4,8 @@ const logo = document.getElementsByClassName('logo')[0];
 const mailIicon = document.getElementsByClassName('mail-icon')[0];
 const header = document.getElementById('header');
 const cardContainer = document.getElementById('portfolio');
+const form = document.querySelector('.form');
+const emailInput = document.querySelector('.email-input .input');
 
 const menuToggle = () => {
   header.classList.toggle('header-mobile-menu-opened');
@@ -18,18 +20,16 @@ hamburgerBtn.addEventListener('click', menuToggle);
 navLinks.addEventListener('click', menuToggle);
 
 const createCard = (name, desc, techs, img) => {
-  let card = document.createElement('div');
+  const card = document.createElement('div');
   card.className = 'card';
-  console.log(name);
-  console.log(techs);
-  let projectName = name;
-  let description = desc;
-  let featuredImage = img;
-  let techList = "";
-  for(let i = 0; i < techs.length; i++){
+  const projectName = name;
+  const description = desc;
+  const featuredImage = img;
+  let techList = '';
+  for (let i = 0; i < techs.length; i += 1) {
     techList += `<li class="card-btn card-btn-html"><button>${techs[i]}</button></li>`;
   }
-  
+
   card.innerHTML = `<div class="card-block">
   <h2 class="card-title">${projectName}</h2>
   <p class="card-desc">
@@ -42,20 +42,20 @@ const createCard = (name, desc, techs, img) => {
   <div class="proj-view">
   <button>See Project</button>
   </div>`;
-  
+
   card.style.background = `linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(${featuredImage})`;
-  
+
   cardContainer.appendChild(card);
 };
-console.log('hi')
-let data = [
+
+const data = [
   {
     name: 'Nerd Game',
     description: 'A multiplayer nerd game. It is a fun easy game you can play with your friend',
     featuredImage: 'img/desktop/placeholder2.png',
     technologies: ['HTML', 'CSS', 'Javascript'],
     liveLink: 'www.google.com',
-    sourceLink: 'www.github.com'
+    sourceLink: 'www.github.com',
   },
   {
     name: 'Nerd Game',
@@ -63,14 +63,29 @@ let data = [
     featuredImage: 'img/desktop/placeholder2.png',
     technologies: ['HTML', 'CSS', 'Javascript'],
     liveLink: 'www.google.com',
-    sourceLink: 'www.github.com'
-  }
+    sourceLink: 'www.github.com',
+  },
 ];
 
-for(let i = 0; i < data.length; i++){
-  console.log(data[i])
+for (let i = 0; i < data.length; i += 1) {
   createCard(data[i].name, data[i].description, data[i].technologies, data[i].featuredImage);
 }
 
-
-
+form.addEventListener('submit', (e) => {
+  let errorMessage = '';
+  for (let i = 0; i < emailInput.value.length; i += 1) {
+    if (emailInput.value.charCodeAt(i) > 64 && emailInput.value.charCodeAt(i) < 91) {
+      errorMessage = '* Email Should be in lowercase';
+      break;
+    }
+  }
+  if (errorMessage.length > 0) {
+    e.preventDefault();
+    const message = document.createElement('h5');
+    message.textContent = errorMessage;
+    message.style.color = 'red';
+    message.style.order = '4';
+    message.style.marginTop = '1rem';
+    form.appendChild(message);
+  }
+});
