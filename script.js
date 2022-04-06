@@ -3,6 +3,7 @@ const navLinks = document.getElementsByClassName('navbar-links')[0];
 const logo = document.getElementsByClassName('logo')[0];
 const mailIicon = document.getElementsByClassName('mail-icon')[0];
 const header = document.getElementById('header');
+const cardContainer = document.getElementById('portfolio');
 
 const menuToggle = () => {
   header.classList.toggle('header-mobile-menu-opened');
@@ -15,3 +16,61 @@ const menuToggle = () => {
 hamburgerBtn.addEventListener('click', menuToggle);
 
 navLinks.addEventListener('click', menuToggle);
+
+const createCard = (name, desc, techs, img) => {
+  let card = document.createElement('div');
+  card.className = 'card';
+  console.log(name);
+  console.log(techs);
+  let projectName = name;
+  let description = desc;
+  let featuredImage = img;
+  let techList = "";
+  for(let i = 0; i < techs.length; i++){
+    techList += `<li class="card-btn card-btn-html"><button>${techs[i]}</button></li>`;
+  }
+  
+  card.innerHTML = `<div class="card-block">
+  <h2 class="card-title">${projectName}</h2>
+  <p class="card-desc">
+      ${description}
+  </p>
+  <ul class="card-tech-btns">
+      ${techList}
+  </ul>
+  </div>
+  <div class="proj-view">
+  <button>See Project</button>
+  </div>`;
+  
+  card.style.background = `linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(${featuredImage})`;
+  
+  cardContainer.appendChild(card);
+};
+console.log('hi')
+let data = [
+  {
+    name: 'Nerd Game',
+    description: 'A multiplayer nerd game. It is a fun easy game you can play with your friend',
+    featuredImage: 'img/desktop/placeholder2.png',
+    technologies: ['HTML', 'CSS', 'Javascript'],
+    liveLink: 'www.google.com',
+    sourceLink: 'www.github.com'
+  },
+  {
+    name: 'Nerd Game',
+    description: 'A multiplayer nerd game. It is a fun easy game you can play with your friend',
+    featuredImage: 'img/desktop/placeholder2.png',
+    technologies: ['HTML', 'CSS', 'Javascript'],
+    liveLink: 'www.google.com',
+    sourceLink: 'www.github.com'
+  }
+];
+
+for(let i = 0; i < data.length; i++){
+  console.log(data[i])
+  createCard(data[i].name, data[i].description, data[i].technologies, data[i].featuredImage);
+}
+
+
+
