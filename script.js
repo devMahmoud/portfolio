@@ -8,7 +8,7 @@ const form = document.querySelector('.form');
 const emailInput = document.querySelector('.email-input .input');
 const nameInput = document.getElementById('person-name');
 const messageInput = document.getElementById('message');
-let formData = {};
+const formData = {};
 
 const menuToggle = () => {
   header.classList.toggle('header-mobile-menu-opened');
@@ -30,19 +30,19 @@ const createCard = (name, desc, techs, img) => {
   const featuredImage = img;
   let techList = '';
   for (let i = 0; i < techs.length; i += 1) {
-    techList += `<li class="card-btn card-btn-html"><button>${techs[i]}</button></li>`;
+    techList += `<li class='card-btn card-btn-html'><button>${techs[i]}</button></li>`;
   }
 
-  card.innerHTML = `<div class="card-block">
-  <h2 class="card-title">${projectName}</h2>
-  <p class="card-desc">
+  card.innerHTML = `<div class='card-block'>
+  <h2 class='card-title'>${projectName}</h2>
+  <p class='card-desc'>
       ${description}
   </p>
-  <ul class="card-tech-btns">
+  <ul class='card-tech-btns'>
       ${techList}
   </ul>
   </div>
-  <div class="proj-view">
+  <div class='proj-view'>
   <button>See Project</button>
   </div>`;
 
@@ -94,7 +94,7 @@ form.addEventListener('submit', (e) => {
 });
 
 if (localStorage.getItem('contact-form')) {
-  const contactInputs = JSON.parse(localStorage.getItem('contact-form'))
+  const contactInputs = JSON.parse(localStorage.getItem('contact-form'));
   if (contactInputs.name) {
     nameInput.value = contactInputs.name;
     formData.name = contactInputs.name;
@@ -109,17 +109,17 @@ if (localStorage.getItem('contact-form')) {
   }
 }
 
-nameInput.addEventListener("change", () => {
+nameInput.addEventListener('change', () => {
   formData.name = nameInput.value;
-  localStorage.setItem("contact-form", JSON.stringify(formData));
+  localStorage.setItem('contact-form', JSON.stringify(formData));
 });
 
-emailInput.addEventListener("change", () => {
+emailInput.addEventListener('change', () => {
   formData.email = emailInput.value;
-  localStorage.setItem("contact-form", JSON.stringify(formData));
+  localStorage.setItem('contact-form', JSON.stringify(formData));
 });
 
-messageInput.addEventListener("change", () => {
+messageInput.addEventListener('change', () => {
   formData.message = messageInput.value;
-  localStorage.setItem("contact-form", JSON.stringify(formData));
+  localStorage.setItem('contact-form', JSON.stringify(formData));
 });
