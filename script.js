@@ -6,6 +6,9 @@ const header = document.getElementById('header');
 const cardContainer = document.getElementById('portfolio');
 const form = document.querySelector('.form');
 const emailInput = document.querySelector('.email-input .input');
+const nameInput = document.getElementById('person-name');
+const messageInput = document.getElementById('message');
+let formData = {};
 
 const menuToggle = () => {
   header.classList.toggle('header-mobile-menu-opened');
@@ -89,3 +92,19 @@ form.addEventListener('submit', (e) => {
     form.appendChild(message);
   }
 });
+
+if (localStorage.getItem('contact-form')) {
+  const contactInputs = JSON.parse(localStorage.getItem('contact-form'))
+  if (contactInputs.name) {
+    nameInput.value = contactInputs.name;
+    formData.name = contactInputs.name;
+  }
+  if (contactInputs.email) {
+    emailInput.value = contactInputs.email;
+    formData.email = contactInputs.email;
+  }
+  if (contactInputs.message) {
+    messageInput.value = contactInputs.message;
+    formData.message = contactInputs.message;
+  }
+}
