@@ -826,6 +826,99 @@ footer {
   border-radius: 10px;
 }
 
+.popup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 718px;
+  border: 1px dashed red;
+}
+
+.pop-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pop-title {
+  display: inline;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.close-pop {
+  width: 12px;
+  height: 12px;
+}
+
+.popup-tech {
+  display: flex;
+  list-style: none;
+}
+
+.popup-tech li {
+  margin-right: 1rem;
+}
+
+.pop-tech-btn {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 0.5rem 1rem;
+  border: 1px solid #979493;
+}
+
+.desc {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  height: 220px;
+  width: 311px;
+}
+
+.see {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.see a {
+  background: #ff6b00;
+  padding: 12px;
+}
+
+.live {
+  width: 134px;
+  height: 48px;
+}
+
+.source {
+  width: 159px;
+  height: 48px;
+}
+
+.see a span {
+  margin-right: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  letter-spacing: 0.03em;
+}
+
 @media (min-width: 768px) {
   .toggle-button {
     display: none;
@@ -1024,5 +1117,16 @@ footer {
 
   .input-devider {
     width: 100%;
+  }
+
+  .popup-container {
+    height: 80vh;
+    width: 80vw;
+  }
+
+  .popup-content {
+    display: flex;
+    flex-direction: row;
+    border: 1px dashed red;
   }
 }
