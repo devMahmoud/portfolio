@@ -123,5 +123,3 @@ messageInput.addEventListener('change', () => {
   formData.message = messageInput.value;
   localStorage.setItem('contact-form', JSON.stringify(formData));
 });
-
-console.log('testing')
