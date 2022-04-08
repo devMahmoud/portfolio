@@ -91,6 +91,11 @@ body {
   margin-top: 2rem;
 }
 
+.see a {
+  background: #ff6b00;
+  padding: 12px;
+}
+
 .navbar-links li a {
   display: block;
   text-decoration: none;
@@ -833,7 +838,6 @@ footer {
   bottom: 0;
   left: 0;
   visibility: hidden;
-  /*background: rgba(151, 148, 147, 0.7);*/
   background: rgba(0, 0, 0, 0.9);
   overflow: auto;
 }
@@ -857,7 +861,7 @@ footer {
 
 .pop-title {
   display: inline;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -880,7 +884,7 @@ footer {
 }
 
 .pop-tech-btn {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -890,7 +894,7 @@ footer {
 }
 
 .desc {
-  font-family: 'Inter';
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -907,11 +911,6 @@ footer {
   justify-content: space-between;
 }
 
-.see a {
-  background: #ff6b00;
-  padding: 12px;
-}
-
 .live {
   width: 134px;
   height: 48px;
@@ -924,7 +923,7 @@ footer {
 
 .see a span {
   margin-right: 12px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -935,7 +934,7 @@ footer {
 
 .screenshot {
   width: 311px;
-height: 220px;
+  height: 220px;
   background-image: url(img/snapshoot-portfolio.png);
 }
 
@@ -1140,7 +1139,6 @@ height: 220px;
   }
 
   .popup-container {
-    /*height: 80vh;*/
     width: 80vw;
   }
 
