@@ -6,6 +6,12 @@ const header = document.getElementById('header');
 const cardContainer = document.getElementById('portfolio');
 const form = document.querySelector('.form');
 const emailInput = document.querySelector('.email-input .input');
+const popTitle = document.querySelector('.pop-title');
+const popTechBtns = document.querySelectorAll('.pop-tech-btn');
+const popImg = document.getElementById('pop-img');
+const popDesc = document.querySelector('.desc')
+const popupWindow = document.querySelector('.overlay');
+const closePop = document.querySelector('.close-pop');
 
 const menuToggle = () => {
   header.classList.toggle('header-mobile-menu-opened');
@@ -40,7 +46,7 @@ const createCard = (name, desc, techs, img) => {
   </ul>
   </div>
   <div class="proj-view">
-  <button>See Project</button>
+  <button class="see-project">See Project</button>
   </div>`;
 
   card.style.background = `linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(${featuredImage})`;
@@ -56,6 +62,7 @@ const data = [
     technologies: ['html', 'CSS', 'Javascript'],
     liveLink: 'www.google.com',
     sourceLink: 'www.github.com',
+    innerDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
   },
   {
     name: 'Profesional Art Printing Data',
@@ -64,6 +71,7 @@ const data = [
     technologies: ['HTML', 'CSS', 'Javascript'],
     liveLink: 'www.google.com',
     sourceLink: 'www.github.com',
+    innerDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
   },
   {
     name: 'Profesional Art Printing Data',
@@ -72,6 +80,7 @@ const data = [
     technologies: ['HTML', 'CSS', 'Javascript'],
     liveLink: 'www.google.com',
     sourceLink: 'www.github.com',
+    innerDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
   },
   {
     name: 'Profesional Art Printing Data',
@@ -80,6 +89,7 @@ const data = [
     technologies: ['HTML', 'CSS', 'Javascript'],
     liveLink: 'www.google.com',
     sourceLink: 'www.github.com',
+    innerDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
   },
   {
     name: 'Profesional Art Printing Data',
@@ -88,6 +98,7 @@ const data = [
     technologies: ['HTML', 'CSS', 'Javascript'],
     liveLink: 'www.google.com',
     sourceLink: 'www.github.com',
+    innerDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
   },
   {
     name: 'Profesional Art Printing Data',
@@ -96,6 +107,7 @@ const data = [
     technologies: ['HTML', 'CSS', 'Javascript'],
     liveLink: 'www.google.com',
     sourceLink: 'www.github.com',
+    innerDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
   },
 ];
 
@@ -121,3 +133,24 @@ form.addEventListener('submit', (e) => {
     form.appendChild(message);
   }
 });
+
+const seeProject = document.querySelectorAll('.see-project');
+
+for (let i = 0; i < seeProject.length; i += 1) {
+  seeProject[i].addEventListener('click', () => {
+    fillPopup(data[i].name, data[i].technologies, data[i].innerDescription);
+    popupWindow.style.visibility = 'visible';
+  });
+}
+
+const fillPopup = (title, techList, description) => {
+  popTitle.textContent = title;
+  popDesc.textContent = description;
+  for (let i = 0; i < popTechBtns.length; i += 1) {
+    popTechBtns[i].textContent = techList[i];
+  }
+};
+
+closePop.addEventListener ('click', () => {
+  popupWindow.style.visibility = 'hidden';
+})

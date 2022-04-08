@@ -833,7 +833,8 @@ footer {
   bottom: 0;
   left: 0;
   visibility: hidden;
-  background: rgba(151, 148, 147, 0.7);
+  /*background: rgba(151, 148, 147, 0.7);*/
+  background: rgba(0, 0, 0, 0.9);
   overflow: auto;
 }
 
@@ -845,10 +846,7 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem;
-  height: 718px;
-  border: 1px dashed red;
   background: #fff;
-  
 }
 
 .pop-header {
@@ -933,6 +931,12 @@ footer {
   line-height: 24px;
   color: #fff;
   letter-spacing: 0.03em;
+}
+
+.screenshot {
+  width: 311px;
+height: 220px;
+  background-image: url(img/snapshoot-portfolio.png);
 }
 
 @media (min-width: 768px) {
@@ -1136,13 +1140,24 @@ footer {
   }
 
   .popup-container {
-    height: 80vh;
+    /*height: 80vh;*/
     width: 80vw;
   }
 
   .popup-content {
     display: flex;
     flex-direction: row;
-    border: 1px dashed red;
+    align-items: center;
+  }
+
+  .desc-see {
+    max-width: 424px;
+    margin-left: 1rem;
+  }
+
+  .screenshot {
+    width: 659px;
+    height: 448px;
+    background-image: url(img/desktop/snapshoot-portfolio.png);
   }
 }
