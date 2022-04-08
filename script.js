@@ -108,3 +108,18 @@ if (localStorage.getItem('contact-form')) {
     formData.message = contactInputs.message;
   }
 }
+
+nameInput.addEventListener("change", () => {
+  formData.name = nameInput.value;
+  localStorage.setItem("contact-form", JSON.stringify(formData));
+});
+
+emailInput.addEventListener("change", () => {
+  formData.email = emailInput.value;
+  localStorage.setItem("contact-form", JSON.stringify(formData));
+});
+
+messageInput.addEventListener("change", () => {
+  formData.message = messageInput.value;
+  localStorage.setItem("contact-form", JSON.stringify(formData));
+});
