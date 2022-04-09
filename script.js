@@ -8,8 +8,7 @@ const form = document.querySelector('.form');
 const emailInput = document.querySelector('.email-input .input');
 const popTitle = document.querySelector('.pop-title');
 const popTechBtns = document.querySelectorAll('.pop-tech-btn');
-const popImg = document.getElementById('pop-img');
-const popDesc = document.querySelector('.desc')
+const popDesc = document.querySelector('.desc');
 const popupWindow = document.querySelector('.overlay');
 const closePop = document.querySelector('.close-pop');
 
@@ -136,13 +135,6 @@ form.addEventListener('submit', (e) => {
 
 const seeProject = document.querySelectorAll('.see-project');
 
-for (let i = 0; i < seeProject.length; i += 1) {
-  seeProject[i].addEventListener('click', () => {
-    fillPopup(data[i].name, data[i].technologies, data[i].innerDescription);
-    popupWindow.style.visibility = 'visible';
-  });
-}
-
 const fillPopup = (title, techList, description) => {
   popTitle.textContent = title;
   popDesc.textContent = description;
@@ -151,6 +143,13 @@ const fillPopup = (title, techList, description) => {
   }
 };
 
-closePop.addEventListener ('click', () => {
+for (let i = 0; i < seeProject.length; i += 1) {
+  seeProject[i].addEventListener('click', () => {
+    fillPopup(data[i].name, data[i].technologies, data[i].innerDescription);
+    popupWindow.style.visibility = 'visible';
+  });
+}
+
+closePop.addEventListener('click', () => {
   popupWindow.style.visibility = 'hidden';
-})
+});
