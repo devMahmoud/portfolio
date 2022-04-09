@@ -23,6 +23,7 @@ HTML, CSS
 
 ## 🤝 Contributing
 
+- ABDUL ALI: @ABDULALI3468
 - Daniel Malo Osorio: @Danie12345
 - Shingirai Bhengesa: @ShingiraiBhengesa
 
