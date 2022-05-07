@@ -55,13 +55,13 @@ const createCard = (name, desc, techs, img) => {
 
 const data = [
   {
-    name: 'Profesional Art Printing Data',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    name: 'Real-time Chat App',
+    description: 'Real-time chat application. All you need to do is enter a username and a room name and share it with your friends so they can join the room.',
     featuredImage: 'img/desktop/placeholder2.png',
-    technologies: ['html', 'CSS', 'Javascript'],
-    liveLink: 'www.google.com',
-    sourceLink: 'www.github.com',
-    innerDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    technologies: ['html', 'CSS', 'NodeJS', 'Express', 'Socket.IO'],
+    liveLink: 'https://devmahmoud.github.io/portfolio/',
+    sourceLink: 'https://github.com/devMahmoud/portfolio',
+    innerDescription: 'Real-time chat application. All you need to do is enter a username and a room name and share it with your friends so they can join the room.',
   },
   {
     name: 'Profesional Art Printing Data',
